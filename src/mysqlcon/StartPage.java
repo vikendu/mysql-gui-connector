@@ -108,6 +108,7 @@ public class StartPage extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jTextField3 = new javax.swing.JTextField();
         jButton5 = new javax.swing.JButton();
+        jLabel24 = new javax.swing.JLabel();
 
         cust_detail.setMinimumSize(new java.awt.Dimension(700, 510));
 
@@ -655,6 +656,14 @@ public class StartPage extends javax.swing.JFrame {
         jTextField3.setText("3306");
 
         jButton5.setText("Get Connection");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+
+        jLabel24.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel24.setText("Bank Management System");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -663,69 +672,69 @@ public class StartPage extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
-                                .addComponent(jButton5)
-                                .addGap(34, 34, 34))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(58, 58, 58)
-                                .addComponent(jTextField3))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel24)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel1))
-                        .addGap(46, 46, 46)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING))
+                                .addGap(46, 46, 46)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                                    .addComponent(jTextField2)
+                                    .addComponent(jPasswordField1)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel4)
+                                .addGap(58, 58, 58)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jButton5)
+                                        .addGap(0, 0, Short.MAX_VALUE))
+                                    .addComponent(jTextField3))))
+                        .addGap(87, 87, 87)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField1)
-                            .addComponent(jTextField2)
-                            .addComponent(jPasswordField1))))
-                .addGap(209, 209, 209)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(61, 61, 61))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(22, 22, 22))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(40, 40, 40)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(78, 78, 78)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel1))))
-                        .addGap(33, 33, 33)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2))
-                        .addGap(8, 8, 8)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3)
-                            .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel4))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton5)))
+                .addContainerGap()
+                .addComponent(jLabel24)
+                .addGap(31, 31, 31)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1)
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addGap(8, 8, 8)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4))
                 .addGap(45, 45, 45)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37))
+                .addComponent(jButton5)
+                .addContainerGap(165, Short.MAX_VALUE))
         );
 
         pack();
@@ -775,7 +784,7 @@ public class StartPage extends javax.swing.JFrame {
             con.close();
         }
         catch(Exception e) {
-            JOptionPane.showMessageDialog(null,"Something went wrong");
+            JOptionPane.showMessageDialog(null,"Database Disconnected or KEY Conflict.");
         }
     }//GEN-LAST:event_jButton6ActionPerformed
 
@@ -813,7 +822,7 @@ try{
 
 }
 catch(Exception e) {
-    JOptionPane.showMessageDialog(null,"Something went Wrong");
+    JOptionPane.showMessageDialog(null,"Database Disconnected or KEY Conflict.");
 }
 }
             // TODO add your handling code here:
@@ -843,7 +852,7 @@ catch(Exception e) {
 
 }
 catch(Exception e) {
-    JOptionPane.showMessageDialog(null,"Something went Wrong");
+    JOptionPane.showMessageDialog(null,"Database Disconnected or KEY Conflict.");
 }
     
         
@@ -879,7 +888,7 @@ try{
 
 }
 catch(Exception e) {
-    JOptionPane.showMessageDialog(null,"Something went Wrong");
+    JOptionPane.showMessageDialog(null,"Database Disconnected or KEY Conflict.");
 }
 }
         // TODO add your handling code here:
@@ -921,7 +930,7 @@ catch(Exception e) {
             con.close();
         }
         catch(Exception e) {
-            JOptionPane.showMessageDialog(null,"Something went wrong");
+            JOptionPane.showMessageDialog(null,"Database Disconnected or KEY Conflict.");
         }
                                     
     
@@ -948,7 +957,7 @@ catch(Exception e) {
 
 }
 catch(Exception e) {
-    JOptionPane.showMessageDialog(null,"Something went Wrong");
+    JOptionPane.showMessageDialog(null,"Database Disconnected or KEY Conflict.");
 }
 
 
@@ -985,7 +994,7 @@ catch(Exception e) {
 
 }
 catch(Exception e) {
-    JOptionPane.showMessageDialog(null,"Something went Wrong");
+    JOptionPane.showMessageDialog(null,"Database Disconnected or KEY Conflict.");
 }
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton12ActionPerformed
@@ -1022,7 +1031,7 @@ try{
 
 }
 catch(Exception e) {
-    JOptionPane.showMessageDialog(null,"Something went Wrong");
+    JOptionPane.showMessageDialog(null,"Database Disconnected or KEY Conflict.");
 }
 }
         
@@ -1066,7 +1075,7 @@ catch(Exception e) {
             con.close();
         }
         catch(Exception e) {
-            JOptionPane.showMessageDialog(null,"Something went wrong");
+            JOptionPane.showMessageDialog(null,"Database Disconnected or KEY Conflict.");
         }
             
         // TODO add your handling code here:
@@ -1104,7 +1113,7 @@ try{
 
 }
 catch(Exception e) {
-    JOptionPane.showMessageDialog(null,"Something went Wrong");
+    JOptionPane.showMessageDialog(null,"Database Disconnected or KEY Conflict.");
 }
 }
         // TODO add your handling code here:
@@ -1147,7 +1156,7 @@ catch(Exception e) {
             con.close();
         }
         catch(Exception e) {
-            JOptionPane.showMessageDialog(null,"Something went wrong");
+            JOptionPane.showMessageDialog(null,"Database Disconnected or KEY Conflict.");
         }
             
         // TODO add your handling code here:
@@ -1173,7 +1182,7 @@ catch(Exception e) {
 
 }
 catch(Exception e) {
-    JOptionPane.showMessageDialog(null,"Something went Wrong");
+    JOptionPane.showMessageDialog(null,"Database Disconnected or KEY Conflict.");
 }
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton17ActionPerformed
@@ -1182,6 +1191,12 @@ catch(Exception e) {
         branches.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+            
+        JOptionPane.showMessageDialog(null,"Database Connected.");
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1270,6 +1285,7 @@ catch(Exception e) {
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
